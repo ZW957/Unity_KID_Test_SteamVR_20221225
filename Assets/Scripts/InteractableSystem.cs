@@ -1,10 +1,10 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using Valve.VR.InteractionSystem;
 
 namespace KID
 {
     /// <summary>
-    /// ¤¬°Ê¨t²Î
+    /// äº’å‹•ç³»çµ±
     /// </summary>
     public class InteractableSystem : MonoBehaviour
     {
@@ -21,7 +21,7 @@ namespace KID
         }
 
         /// <summary>
-        /// ±Nª«¥óÀx¦s¦Ü¹D¨ãÄæ
+        /// å°‡ç‰©ä»¶å„²å­˜è‡³é“å…·æ¬„
         /// </summary>
         private void SaveToInventory()
         {
@@ -29,6 +29,7 @@ namespace KID
             {
                 if (interactable.attachedToHand == null) return;
 
+                // æ”¾å…¥èƒŒåŒ…
                 interactable.attachedToHand.DetachObject(gameObject);
             }
         }
